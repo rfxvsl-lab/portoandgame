@@ -1,0 +1,15 @@
+{
+  "name": "portoandgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "python3 app.py",
+    "test": "echo \"No automated tests\"",
+    "dev": "python3 app.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

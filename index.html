@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Digital Playground Resume - Portofolio interaktif, fun, elegan, dan immersive."
+    />
+    <title>Digital Playground Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+      <symbol id="i-palette" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0 0 20h1.2a2.8 2.8 0 0 0 0-5.6h-1.8a1.6 1.6 0 0 1 0-3.2h2.2A5.4 5.4 0 0 0 19 7.8A5.8 5.8 0 0 0 12 2Zm-5 8.2a1.4 1.4 0 1 1 0-2.8a1.4 1.4 0 0 1 0 2.8Zm3-3a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4Zm4.4-.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4Zm2.8 2.8a1.4 1.4 0 1 1 0-2.8a1.4 1.4 0 0 1 0 2.8Z"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10h-2a8 8 0 1 1-8-8V2Zm0 4a6 6 0 1 0 6 6h-2a4 4 0 1 1-4-4V6Zm0 4a2 2 0 1 0 2 2h2a4 4 0 1 1-4-4v2Z"/></symbol>
+      <symbol id="i-brain" viewBox="0 0 24 24"><path fill="currentColor" d="M9 3a4 4 0 0 0-4 4v.3A4 4 0 0 0 3 11v2a4 4 0 0 0 4 4h1v2h2v-2h1V9H9V7a2 2 0 1 1 4 0v1h2V7a4 4 0 0 0-4-4H9Zm6 6v8h2a4 4 0 0 0 4-4v-2a4 4 0 0 0-2-3.7V7a4 4 0 0 0-4-4h-1v2h1a2 2 0 1 1 0 4h-2Z"/></symbol>
+      <symbol id="i-rocket" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3c2.8 0 5 2.2 5 5c0 3.7-2.1 6.8-5.2 8.4l-1.8.9l-.9 1.8L8 21l1.9-3.1l1.8-.9C13.3 14.9 15 12.6 15 10a1 1 0 1 0-2 0c0 1.8-1.2 3.9-3.1 4.9l-.8.4l-.4.8l-.8 1.3l-1.2-1.2l1.3-.8l.8-.4l.4-.8C10.1 13.2 12.2 12 14 12a1 1 0 1 0 0-2c-2.6 0-4.9 1.7-6 4.1C6.6 13.3 5 11 5 8a5 5 0 0 1 5-5h4Z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.5A4.5 4.5 0 1 1 7.5 12A4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12A2.5 2.5 0 0 0 12 9.5ZM17.8 6.2a1 1 0 1 1-1 1a1 1 0 0 1 1-1Z"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.9.6-3.5-1.2-3.5-1.2c-.5-1.1-1.1-1.4-1.1-1.4c-.9-.6.1-.6.1-.6c1 .1 1.6 1 1.6 1c.9 1.5 2.4 1 2.9.8c.1-.7.4-1 .7-1.3c-2.3-.3-4.8-1.1-4.8-5A3.8 3.8 0 0 1 6.4 8c-.1-.3-.4-1.2.1-2.5c0 0 .9-.3 2.9 1.1a10 10 0 0 1 5.2 0c2-1.4 2.9-1.1 2.9-1.1c.6 1.3.2 2.2.1 2.5a3.8 3.8 0 0 1 1 2.6c0 3.9-2.5 4.7-4.8 5c.4.3.8.9.8 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M6.5 8.5A1.5 1.5 0 1 1 6.5 5a1.5 1.5 0 0 1 0 3.5ZM5 10h3v9H5v-9Zm5 0h2.9v1.3h.1c.4-.8 1.4-1.6 2.9-1.6c3.1 0 3.6 2 3.6 4.7V19h-3v-3.9c0-.9 0-2.1-1.3-2.1s-1.5 1-1.5 2V19h-3v-9Z"/></symbol>
+    </svg>
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__orbit"></div>
+      <p>Preparing playground...</p>
+    </div>
+
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+    <div class="cursor" id="customCursor" aria-hidden="true"></div>
+
+    <header class="site-header glass" id="logoTrigger">
+      <a href="#hero" class="logo"><svg class="icon"><use href="#i-palette"></use></svg> Playground Resume</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
+        <a href="/admin">Admin</a>
+      </nav>
+      <div class="header-actions">
+        <button id="sfxToggle" class="chip" type="button">SFX: On</button>
+        <button id="musicToggle" class="chip" type="button">Music: Off</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section">
+        <div class="hero-gradient" aria-hidden="true"></div>
+        <div class="hero-content glass">
+          <p class="intro" data-content-key="hero_intro">Halo, saya</p>
+          <h1 data-content-key="hero_name">Nama Anda</h1>
+          <p class="typewriter" id="typewriter"></p>
+          <p class="subtitle reveal" data-content-key="hero_subtitle">Creative Developer • Video Editor • Storyteller</p>
+          <button id="ctaBtn" class="cta magnetic" type="button">Explore Playground</button>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <h2 data-content-key="about_title">About Me · Story Mode</h2>
+        <div class="story-track" id="storyTrack">
+          <article class="story-card glass">
+            <h3 data-content-key="story_1_title">Chapter 1 · Spark</h3>
+            <p data-content-key="story_1_text">Awal perjalanan dimulai dari rasa penasaran terhadap desain dan coding interaktif.</p>
+          </article>
+          <article class="story-card glass">
+            <h3 data-content-key="story_2_title">Chapter 2 · Build</h3>
+            <p data-content-key="story_2_text">Membangun website, video, dan visual storytelling yang engaging.</p>
+          </article>
+          <article class="story-card glass">
+            <h3 data-content-key="story_3_title">Chapter 3 · Evolve</h3>
+            <p data-content-key="story_3_text">Menyeimbangkan kreativitas, performa, dan user experience modern.</p>
+          </article>
+        </div>
+        <div class="timeline glass">
+          <div><span>2021</span>Mulai freelance web profile.</div>
+          <div><span>2023</span>Kolaborasi campaign digital multimedia.</div>
+          <div><span>2025</span>Fokus produk interaktif dan game-like UX.</div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card glass">
+            <h4>HTML / CSS</h4>
+            <div class="bar"><span data-level="95"></span></div>
+          </div>
+          <div class="skill-card glass">
+            <h4>JavaScript</h4>
+            <div class="bar"><span data-level="88"></span></div>
+          </div>
+          <div class="skill-card glass">
+            <h4>Editing</h4>
+            <div class="bar"><span data-level="90"></span></div>
+          </div>
+          <div class="skill-card glass">
+            <h4>Creativity</h4>
+            <div class="bar"><span data-level="98"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <h2 data-content-key="projects_title">Projects</h2>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="video">Video</button>
+          <button class="filter" data-filter="design">Design</button>
+        </div>
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card glass" data-category="web" data-title="Immersive Landing" data-detail="Landing page interaktif dengan fokus storytelling dan konversi." data-video="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
+            <h3 data-content-key="project_1_title">Immersive Landing</h3>
+            <p>Web</p>
+            <video muted loop preload="none" loading="lazy" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></video>
+          </article>
+          <article class="project-card glass" data-category="video" data-title="Brand Motion Reel" data-detail="Showreel motion branding dengan ritme cepat dan transisi halus." data-video="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm">
+            <h3 data-content-key="project_2_title">Brand Motion Reel</h3>
+            <p>Video</p>
+            <video muted loop preload="none" loading="lazy" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"></video>
+          </article>
+          <article class="project-card glass" data-category="design" data-title="UI Aesthetic Kit" data-detail="Sistem UI modern bertema pastel neon dengan microinteraction." data-video="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
+            <h3 data-content-key="project_3_title">UI Aesthetic Kit</h3>
+            <p>Design</p>
+            <video muted loop preload="none" loading="lazy" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></video>
+          </article>
+        </div>
+      </section>
+
+      <section id="games" class="section games">
+        <h2 data-content-key="games_title">Mini Game Zone</h2>
+        <div class="leaderboard glass">
+          <h3 data-content-key="leaderboard_title">Leaderboard Lokal</h3>
+          <ul id="leaderboard"></ul>
+        </div>
+
+        <div class="game-card glass">
+          <h3><svg class="icon"><use href="#i-target"></use></svg> Skill Catcher</h3>
+          <p data-content-key="game_1_desc">Gerakkan karakter dengan mouse / sentuh untuk menangkap skill.</p>
+          <canvas id="skillCatcher" width="800" height="280"></canvas>
+          <div class="game-ui"><span id="catcherScore">Score: 0</span><button data-reset="catcher">Reset</button></div>
+        </div>
+
+        <div class="game-card glass">
+          <h3><svg class="icon"><use href="#i-brain"></use></svg> Memory Match</h3>
+          <div class="game-ui"><span id="memoryInfo">Score: 0 | Time: 60</span><button data-reset="memory">Reset</button></div>
+          <div id="memoryGrid" class="memory-grid"></div>
+          <p id="funFact" class="fun-fact"></p>
+        </div>
+
+        <div class="game-card glass">
+          <h3><svg class="icon"><use href="#i-rocket"></use></svg> Code Runner</h3>
+          <p data-content-key="game_3_desc">Tekan Space/↑ untuk lompat dan hindari bug!</p>
+          <canvas id="codeRunner" width="800" height="220"></canvas>
+          <div class="game-ui"><span id="runnerScore">Score: 0</span><div class="runner-controls"><button id="runnerJump" type="button">Jump</button><button data-reset="runner">Reset</button></div></div>
+          <p id="runnerMessage"></p>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2 data-content-key="contact_title">Contact Me</h2>
+        <form class="contact-form glass" id="contactForm" novalidate>
+          <div class="field">
+            <input type="text" id="name" required />
+            <label for="name">Nama</label>
+          </div>
+          <div class="field">
+            <input type="email" id="email" required />
+            <label for="email">Email</label>
+          </div>
+          <div class="field">
+            <textarea id="message" rows="4" required></textarea>
+            <label for="message">Pesan</label>
+          </div>
+          <button class="cta glow" type="submit" data-content-key="contact_button">Kirim Pesan</button>
+          <p id="formStatus"></p>
+        </form>
+        <div class="socials">
+          <a href="#" aria-label="instagram"><svg class="icon"><use href="#i-instagram"></use></svg></a>
+          <a href="#" aria-label="github"><svg class="icon"><use href="#i-github"></use></svg></a>
+          <a href="#" aria-label="linkedin"><svg class="icon"><use href="#i-linkedin"></use></svg></a>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal-content glass">
+        <button id="closeModal" aria-label="close">✕</button>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDetail"></p>
+      </div>
+    </div>
+
+    <div id="secretMode" class="secret-mode" aria-hidden="true">
+      <p data-content-key="secret_message">🌌 Secret Mode unlocked: "You found the hidden cosmos of creativity!"</p>
+    </div>
+
+    <audio id="bgMusic" loop preload="none">
+      <source src="assets/ambience.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

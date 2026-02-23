@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - Playground Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="section" style="max-width:900px;">
+    <h1>Admin Panel</h1>
+    <p>Kelola teks konten frontend (tanpa upload gambar).</p>
+
+    <section id="loginBox" class="glass" style="padding:1rem; margin-bottom:1rem;">
+      <h2>Login Admin</h2>
+      <div class="field"><input id="email" type="email" required /><label for="email">Email</label></div>
+      <div class="field"><input id="password" type="password" required /><label for="password">Password</label></div>
+      <button id="loginBtn" class="cta" type="button">Login</button>
+      <p id="loginStatus"></p>
+      <small>Email default: mhmmadridho64@gmail.com</small>
+    </section>
+
+    <section id="editorBox" class="glass" style="padding:1rem; display:none;">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:.5rem;">
+        <h2 style="margin:0;">Edit Konten Website</h2>
+        <div style="display:flex;gap:.5rem;"><button id="logoutBtn" class="chip" type="button">Logout</button><a class="chip" href="/" style="display:inline-block;">Buka Website</a></div>
+      </div>
+      <form id="contentForm" style="display:grid;gap:.7rem;margin-top:1rem;"></form>
+      <button id="saveBtn" class="cta glow" type="button">Simpan Perubahan</button>
+      <p id="saveStatus"></p>
+    </section>
+  </main>
+  <script src="admin.js" defer></script>
+</body>
+</html>
