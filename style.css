@@ -193,3 +193,221 @@ a { color: var(--text); text-decoration: none; }
 .admin-live-edit [data-content-key] { outline: 1px dashed rgba(142,197,255,.7); outline-offset: 3px; cursor: text; }
 .admin-live-edit .glass { cursor: grab; }
 .admin-live-edit .glass:active { cursor: grabbing; }
+
+/* Mobile-first stabilization overrides */
+:root {
+  --section-pad-x: 0.9rem;
+}
+
+.site-header {
+  top: 0.5rem;
+  width: calc(100% - 1rem);
+  margin: 0.5rem auto 0;
+  padding: 0.7rem 0.8rem;
+  gap: 0.6rem;
+}
+
+.site-header nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.site-header nav a {
+  text-align: center;
+  font-size: 0.84rem;
+  padding: 0.35rem 0.3rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.header-actions {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.chip {
+  width: 100%;
+  padding: 0.45rem 0.2rem;
+  font-size: 0.78rem;
+}
+
+.section {
+  padding: 6rem var(--section-pad-x) 2.6rem;
+}
+
+.hero {
+  min-height: 84vh;
+}
+
+.hero-content {
+  padding: 1.2rem 0.95rem;
+  border-radius: 18px;
+}
+
+.story-track {
+  grid-auto-columns: 90%;
+}
+
+.timeline {
+  gap: 0.5rem;
+}
+
+.timeline div {
+  font-size: 0.92rem;
+}
+
+.skills-grid,
+.project-grid {
+  grid-template-columns: 1fr;
+}
+
+.project-card,
+.game-card,
+.story-card,
+.skill-card {
+  border-radius: 16px;
+}
+
+.games .leaderboard {
+  margin-bottom: 0.8rem;
+}
+
+.game-ui {
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.game-ui > * {
+  flex: 1 1 auto;
+  min-width: 110px;
+}
+
+#skillCatcher,
+#codeRunner,
+#blockBlast,
+#catMouse,
+#rocketTouch {
+  max-height: 240px;
+  min-height: 220px;
+  touch-action: none;
+}
+
+.memory-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.memory-card {
+  min-height: 58px;
+  font-size: 0.78rem;
+  padding: 0.2rem;
+}
+
+.contact-form {
+  gap: 0.7rem;
+}
+
+.socials {
+  justify-content: center;
+}
+
+.modal-content {
+  width: calc(100% - 1rem);
+}
+
+/* tablet and up */
+@media (min-width: 680px) {
+  .site-header nav {
+    width: auto;
+    display: flex;
+    gap: 0.6rem;
+  }
+
+  .site-header nav a {
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .header-actions {
+    width: auto;
+    display: flex;
+  }
+
+  .chip {
+    width: auto;
+    font-size: 0.84rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .section {
+    padding: 6.6rem 1rem 3rem;
+  }
+
+  .story-track {
+    grid-auto-columns: 58%;
+  }
+
+  .skills-grid,
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #skillCatcher,
+  #codeRunner,
+  #blockBlast,
+  #catMouse,
+  #rocketTouch {
+    max-height: 280px;
+    min-height: 250px;
+  }
+
+  .memory-card {
+    min-height: 66px;
+    font-size: 0.9rem;
+  }
+}
+
+/* desktop and up */
+@media (min-width: 980px) {
+  .site-header {
+    top: 0.75rem;
+    width: min(1100px, 95%);
+    padding: 0.9rem 1rem;
+    gap: 1rem;
+  }
+
+  .site-header nav {
+    gap: 0.8rem;
+  }
+
+  .section {
+    padding: 7rem 1rem 3rem;
+  }
+
+  .story-track {
+    grid-auto-columns: 40%;
+  }
+
+  .skills-grid,
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  #skillCatcher,
+  #codeRunner,
+  #blockBlast,
+  #catMouse,
+  #rocketTouch {
+    max-height: 320px;
+    min-height: 260px;
+  }
+}
