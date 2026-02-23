@@ -8,9 +8,12 @@
   --blue: #8ec5ff;
   --peach: #ffc3a0;
   --radius: 20px;
+  --icon-scale: 1;
+  --font-scale: 1;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; font-family: Inter, sans-serif; color: var(--text); background: var(--bg); scroll-behavior: smooth; }
+body { font-size: calc(16px * var(--font-scale)); }
 body { overflow-x: hidden; }
 canvas#particleCanvas { position: fixed; inset: 0; z-index: -1; }
 .section { padding: 6rem 1rem 3rem; max-width: 1100px; margin: 0 auto; }
@@ -50,7 +53,7 @@ a { color: var(--text); text-decoration: none; }
 .game-ui { display: flex; justify-content: space-between; margin-top: .5rem; }
 .game-ui button { border: 1px solid var(--line); background: transparent; color: var(--text); border-radius: 12px; cursor: pointer; }
 .runner-controls { display: flex; gap: .5rem; }
-#skillCatcher, #codeRunner { width: 100%; max-height: 280px; background: radial-gradient(circle at top,#1d2645,#11182d); border-radius: 14px; }
+#skillCatcher, #codeRunner, #blockBlast, #catMouse, #rocketTouch { width: 100%; max-height: 320px; background: radial-gradient(circle at top,#1d2645,#11182d); border-radius: 14px; }
 .memory-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; margin-top: .8rem; }
 .memory-card { min-height: 70px; border-radius: 14px; display: grid; place-items: center; border: 1px solid var(--line); background: rgba(255,255,255,.05); cursor: pointer; font-weight: 700; }
 .memory-card.flipped, .memory-card.matched { background: rgba(142,197,255,.25); }
@@ -83,9 +86,9 @@ a { color: var(--text); text-decoration: none; }
   .story-track { grid-auto-columns: 40%; }
 }
 
-.icon { width: 1.05rem; height: 1.05rem; display: inline-block; vertical-align: -0.15em; margin-right: .4rem; }
-.logo .icon { width: 1.2rem; height: 1.2rem; margin-right: .3rem; }
-.socials .icon { width: 1.4rem; height: 1.4rem; margin-right: 0; }
+.icon { width: calc(1.05rem * var(--icon-scale)); height: calc(1.05rem * var(--icon-scale)); display: inline-block; vertical-align: -0.15em; margin-right: .4rem; }
+.logo .icon { width: calc(1.2rem * var(--icon-scale)); height: calc(1.2rem * var(--icon-scale)); margin-right: .3rem; }
+.socials .icon { width: calc(1.4rem * var(--icon-scale)); height: calc(1.4rem * var(--icon-scale)); margin-right: 0; }
 
 /* Blurred pulse circles behind cards for precise, balanced decorative motion */
 .story-card,
@@ -185,3 +188,8 @@ a { color: var(--text); text-decoration: none; }
     filter: blur(24px);
   }
 }
+
+.light-mode { --bg:#f5f7ff; --card: rgba(255,255,255,0.72); --line: rgba(90,99,120,.18); --text:#1f2436; --muted:#4b5570; }
+.admin-live-edit [data-content-key] { outline: 1px dashed rgba(142,197,255,.7); outline-offset: 3px; cursor: text; }
+.admin-live-edit .glass { cursor: grab; }
+.admin-live-edit .glass:active { cursor: grabbing; }

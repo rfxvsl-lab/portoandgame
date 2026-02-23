@@ -46,6 +46,7 @@
       <div class="header-actions">
         <button id="sfxToggle" class="chip" type="button">SFX: On</button>
         <button id="musicToggle" class="chip" type="button">Music: Off</button>
+        <button id="themeToggle" class="chip" type="button">Mode: Dark</button>
       </div>
     </header>
 
@@ -85,19 +86,19 @@
         <div class="skills-grid">
           <div class="skill-card glass">
             <h4>HTML / CSS</h4>
-            <div class="bar"><span data-level="95"></span></div>
+            <div class="bar"><span data-level="95" data-skill-key="skill_html"></span></div>
           </div>
           <div class="skill-card glass">
             <h4>JavaScript</h4>
-            <div class="bar"><span data-level="88"></span></div>
+            <div class="bar"><span data-level="88" data-skill-key="skill_js"></span></div>
           </div>
           <div class="skill-card glass">
             <h4>Editing</h4>
-            <div class="bar"><span data-level="90"></span></div>
+            <div class="bar"><span data-level="90" data-skill-key="skill_editing"></span></div>
           </div>
           <div class="skill-card glass">
             <h4>Creativity</h4>
-            <div class="bar"><span data-level="98"></span></div>
+            <div class="bar"><span data-level="98" data-skill-key="skill_creativity"></span></div>
           </div>
         </div>
       </section>
@@ -156,6 +157,27 @@
           <canvas id="codeRunner" width="800" height="220"></canvas>
           <div class="game-ui"><span id="runnerScore">Score: 0</span><div class="runner-controls"><button id="runnerJump" type="button">Jump</button><button data-reset="runner">Reset</button></div></div>
           <p id="runnerMessage"></p>
+        </div>
+
+        <div class="game-card glass" data-game-toggle="enable_blockblast" id="blockBlastCard">
+          <h3>🧩 Block Blast Lite</h3>
+          <p>Susun block, hapus baris/kolom, skor bisa terus naik hingga 99999999.</p>
+          <canvas id="blockBlast" width="800" height="320"></canvas>
+          <div class="game-ui"><span id="blockScore">Score: 0</span><button data-reset="block">Reset</button></div>
+        </div>
+
+        <div class="game-card glass" data-game-toggle="enable_cat_mouse" id="catMouseCard">
+          <h3>🐱 Cat vs Mouse</h3>
+          <p>Kendalikan kucing, kejar tikus secepat mungkin.</p>
+          <canvas id="catMouse" width="800" height="260"></canvas>
+          <div class="game-ui"><span id="catScore">Score: 0</span><button data-reset="cat">Reset</button></div>
+        </div>
+
+        <div class="game-card glass" data-game-toggle="enable_rocket_touch" id="rocketTouchCard">
+          <h3>🛰️ Rocket Touch Control</h3>
+          <p>Roket full sentuhan tangan: drag ke kiri/kanan, hindari asteroid.</p>
+          <canvas id="rocketTouch" width="800" height="300"></canvas>
+          <div class="game-ui"><span id="rocketScore">Score: 0</span><button data-reset="rocket">Reset</button></div>
         </div>
       </section>
 

@@ -34,7 +34,20 @@ DEFAULT_CONTENT = {
     'game_3_desc': 'Tekan Space/↑ untuk lompat dan hindari bug!',
     'secret_message': '🌌 Secret Mode unlocked: "You found the hidden cosmos of creativity!"',
     'contact_title': 'Contact Me',
-    'contact_button': 'Kirim Pesan'
+    'contact_button': 'Kirim Pesan',
+    'skill_html': '95',
+    'skill_js': '88',
+    'skill_editing': '90',
+    'skill_creativity': '98',
+    'enable_blockblast': 'true',
+    'enable_cat_mouse': 'true',
+    'enable_rocket_touch': 'true',
+    'theme_mode': 'dark',
+    'sfx_default': 'on',
+    'music_default': 'off',
+    'layout_json': '{}',
+    'icon_scale': '1',
+    'font_scale': '1'
 }
 
 

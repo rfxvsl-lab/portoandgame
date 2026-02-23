@@ -19,7 +19,19 @@ const labels = {
   game_3_desc: 'Deskripsi Game 3',
   secret_message: 'Pesan Secret Mode',
   contact_title: 'Judul Contact',
-  contact_button: 'Tombol Contact'
+  contact_button: 'Tombol Contact',
+  skill_html: 'Skill HTML (%)',
+  skill_js: 'Skill JavaScript (%)',
+  skill_editing: 'Skill Editing (%)',
+  skill_creativity: 'Skill Creativity (%)',
+  enable_blockblast: 'Aktifkan Block Blast (true/false)',
+  enable_cat_mouse: 'Aktifkan Cat Mouse (true/false)',
+  enable_rocket_touch: 'Aktifkan Rocket Touch (true/false)',
+  theme_mode: 'Theme Default (dark/light)',
+  sfx_default: 'SFX Default (on/off)',
+  music_default: 'Music Default (on/off)',
+  icon_scale: 'Skala Icon (contoh: 1 atau 1.2)',
+  font_scale: 'Skala Font (contoh: 1 atau 1.1)'
 };
 
 const loginBox = document.getElementById('loginBox');
@@ -43,7 +55,7 @@ function renderForm(content) {
   Object.entries(labels).forEach(([key, label]) => {
     const wrapper = document.createElement('div');
     wrapper.className = 'field';
-    const input = document.createElement(key.includes('_text') ? 'textarea' : 'input');
+    const input = document.createElement((key.includes('_text') || key.includes('message')) ? 'textarea' : 'input');
     if (input.tagName === 'INPUT') input.type = 'text';
     input.id = key;
     input.value = content[key] || '';
